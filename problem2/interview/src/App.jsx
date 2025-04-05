@@ -21,6 +21,7 @@ function App() {
     setIsLoading(false);
   }, []);
 
+  // here for deleting in just remove the element from the array. as i informed to simran for this.
   const handleDelete = useCallback(
     (idx) => {
       setPerson(prev => prev.filter((_, index)=> index !== idx));
